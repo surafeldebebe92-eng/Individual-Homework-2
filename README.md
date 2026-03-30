@@ -9,13 +9,13 @@ This assignment builds an explainability pipeline for a logistic regression mode
 
 **Python Libraries Used**
 
-- `pandas` — data loading, filtering, and manipulation
-- `numpy` — numerical computations
+- `pandas` : data loading, filtering, and manipulation
+- `numpy` : numerical computations
 - `matplotlib` — data visualization
-- `scikit-learn` — logistic regression model, train/test split, label encoding
-- `shap` — SHAP beeswarm and waterfall plots
-- `lime` — local explanation of individual predictions
-- `dice-ml` — counterfactual generation
+- `scikit-learn` : logistic regression model, train/test split, label encoding
+- `shap` : SHAP beeswarm and waterfall plots
+- `lime` : local explanation of individual predictions
+- `dice-ml` : counterfactual generation
 
 
 **Instructions for Reproducing the Results**
@@ -25,14 +25,13 @@ This assignment builds an explainability pipeline for a logistic regression mode
 
 **Workflow**
 1. **Load and filter data** — The COMPAS dataset is pulled directly from a URL and filtered using the same criteria as the original ProPublica analysis
-2. **Train model** — A logistic regression model is trained to predict whether a defendant receives a high COMPAS score
-3. **Identify four individuals** — The highest and lowest risk Black and White defendants are selected from the test set
-4. **SHAP analysis** — A beeswarm summary plot and waterfall plots are produced for all four individuals
-5. **LIME analysis** — Local explanations are generated for each individual and compared against SHAP attributions
-6. **DiCE counterfactuals** — Minimal feature changes required to flip each prediction are reported, with immutable features flagged
-7. **Governance memo** — Findings are summarized in a 300-word memo addressed to a hypothetical court auditor
+2. **Train model** : A logistic regression model is trained to predict whether a defendant receives a high COMPAS score
+3. **Identify four individuals** : The highest and lowest risk Black and White defendants are selected from the test set
+4. **SHAP analysis** : A beeswarm summary plot and waterfall plots are produced for all four individuals
+5. **LIME analysis** : Local explanations are generated for each individual and compared against SHAP attributions
+6. **DiCE counterfactuals** : Minimal feature changes required to flip each prediction are reported, with immutable features flagged
+7. **Governance memo** : Findings are summarized in a 300-word memo addressed to a hypothetical court auditor
 
 **Notes**
 - Cells must be run in order — each cell depends on variables defined above it
-- An internet connection is required to load the dataset
 - Results may vary slightly between runs due to LIME's random sampling process
